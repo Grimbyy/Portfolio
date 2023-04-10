@@ -1,0 +1,41 @@
+.app {
+  background: var(--p-green);
+  position: absolute;
+  top:50%;
+  left:50%;
+  width: 50vh;
+  height: 50vh;
+  transform: translate(-50%, -50%);
+  animation: popin 1s;
+  padding: 10px;
+}
+
+.app > * {
+  opacity: 0;
+  animation: fadein 1s forwards;
+}
+
+.app h1, .app h2, .app h3, .app h4, .app h5 {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes popin {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* MOBILE */
