@@ -23,3 +23,7 @@
 
   --delay-1s: 1s;
 }
+
+html {
+  overflow: hidden;
+}
